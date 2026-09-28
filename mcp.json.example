@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "modian": {
+      "command": "python",
+      "args": ["-m", "modian_mcp.server"]
+    }
+  }
+}

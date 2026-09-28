@@ -1,0 +1,29 @@
+[project]
+name = "modian-mcp"
+version = "0.1.0"
+description = "MCP Server for 摩点众筹 (zhongchou.modian.com) — 快速给 AI 提供众筹项目列表、详情、回报档位、更新等数据"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "mcp>=1.2,<2",
+  "requests>=2.31",
+  "beautifulsoup4>=4.12",
+  "lxml>=4.9",
+]
+
+[project.optional-dependencies]
+browser = [
+  "selenium>=4.0",
+  "webdriver-manager>=4.0",
+  "requests-html>=0.10",
+]
+dev = [
+  "pytest>=8.0",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
